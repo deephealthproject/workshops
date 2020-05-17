@@ -13,7 +13,7 @@ For this first session some material is available:
   * Video tutorial 1 where Anaconda3, EDDL, OpenCV, ECVL and _use case pipeline_ are installed [Video1](http://personales.upv.es/jon/Screencast-installation-EDDL-ECVL-pipeline.mp4)
   * Video tutorial 2 where code changes are shown in order to use the **YAML** files [Video2](http://personales.upv.es/jon/Screencast-dataset-description-and-code-changes.mp4)
   * Dataset extracted from [PADCHEST](http://bimcv.cipf.es/bimcv-projects/padchest/) split in two ZIP files:
-    * [Part 1] **not available yet**
-    * [Part 2] **not available yet**
+    * [Part 1](https://intercambio.upv.es/download.php?id=fb195897e663b329b614923f5c29acf3)
+    * [Part 2](https://intercambio.upv.es/download.php?id=016b04d7fb480fe5c00943080c73b449)
   
   
