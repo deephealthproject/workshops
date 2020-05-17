@@ -10,7 +10,7 @@ It is planned to have several sessions in order to show and help other partners 
 
 For this first session some material is available:
   * Bitacora used during the installation of the libraries and dependencies: [Bitacora](https://github.com/deephealthproject/workshops/blob/master/session-1/bitacora-deephealth-workshop.txt)
-  * Video tutorial 1 where Anaconda3, EDDL, OpenCV, ECVL and _use case pipeline_ are installed [Video1](https://github.com/deephealthproject/workshops/blob/master/session-1/Screencast-installation-EDDL-ECVL-pipleline.mp4)
+  * Video tutorial 1 where Anaconda3, EDDL, OpenCV, ECVL and _use case pipeline_ are installed [Video1] **not ready yet**
   * Video tutorial 2 where code changes are shown in order to use the **YAML** files [Video2] **not ready yet**
   
   
