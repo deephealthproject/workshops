@@ -14,7 +14,6 @@ For this first session some material is available:
     * [prep-installation-1.sh](session-1/prep-installation-1.sh)
     * [prep-installation-2.sh](session-1/prep-installation-2.sh)
     * [prep-installation-3.sh](session-1/prep-installation-3.sh)
-    * [prep-installation-3.sh](session-1/prep-installation-3.sh)
     * [install-eddl-from-source.sh](session-1/install-eddl-from-source.sh)
     * [install-opencv-from-source.sh](session-1/install-opencv-from-source.sh)
     * [install-ecvl-from-source.sh](session-1/install-ecvl-from-source.sh)
