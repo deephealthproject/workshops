@@ -38,21 +38,22 @@ For this first session the following material is available in order to help **_D
 
 Proposed schedule for the first session (can be modified if required):
 
-    * Presentations:
+  * Presentations:
 
-        1. UC12 & Pneumothorax in C++ (UNIMORE)
-            * Pneumothorax: demo for downloading the dataset, download the masks (ground truth), cloning the pipeline repository, compile and execute the setup program, which copies the masks into the right folders, compile and execute the training program.
+    1. UC12 & Pneumothorax in C++ (UNIMORE)
+      * Pneumothorax: demo for downloading the dataset, download the masks (ground truth), cloning the pipeline repository, compile and execute the setup program, which copies the masks into the right folders, compile and execute the training program.
 
-        2. Padchest in C++ (UPV)
+    2. Padchest in C++ (UPV)
 
-        3. UC12 & Pneumothorax in Python (UNIMORE)
+    3. UC12 & Pneumothorax in Python (UNIMORE)
 
-        4. Padchest in Python (UPV)
+    4. Padchest in Python (UPV)
 
-    * Configuration issues and programming:
+  * Configuration issues and programming:
 
-        * Testing pipelines run on partners’ computers and giving the necessary support
+    * Testing pipelines run on partners’ computers and giving the necessary support
   
   
 ## Second session (tentative date) 2020-06-04 (Thursday) from 8 AM to 11 AM
-    * T.B.A.
+
+  * T.B.A.
