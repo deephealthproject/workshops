@@ -9,7 +9,9 @@ Further support in addition to these sessions will be provided in order to reach
 
 ## First session 2020-05-21 (Thursday) from 8 AM to 11 AM
 
-For this first session the following material is available in order to help **_DeepHealth_** partners and any other interested people in preparing the complete pipeline:
+For this first session the following material is available in order to help **_DeepHealth_** partners and any other interested people in preparing the complete pipeline.
+What you can see here has been prepared starting from the [_use case pipeline_](https://github.com/deephealthproject/use_case_pipeline) prepared by UNIMORE team.
+But the purpose of this alternative is to have an installation of the EDDL in a _conda_ environment named _eddl_ ready to be used in any other project or task.
 
   * Shell-scripts used to do the installation of the libraries and the pipeline example. Must be executed in the order they appear:
     * [prep-installation-1.sh](session-1/prep-installation-1.sh)
