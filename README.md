@@ -38,7 +38,7 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
     * [Part 1](https://intercambio.upv.es/download.php?id=fb195897e663b329b614923f5c29acf3)
     * [Part 2](https://intercambio.upv.es/download.php?id=016b04d7fb480fe5c00943080c73b449)
 
-  * Alternative installation procedure for non-privileged users when a **conda** already is available in the Linux system (no videos are available):
+  * Alternative installation procedure for non-privileged users when **conda** is already available in the Linux system (no videos were prepared):
     * [prep-installation.sh](session-1-no-superuser/prep-installation-3.sh)
     * [install-eddl-from-source.sh](session-1-no-superuser/install-eddl-from-source.sh)
     * [install-opencv-from-source.sh](session-1-no-superuser/install-opencv-from-source.sh)
