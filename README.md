@@ -38,7 +38,7 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
     * [Part 1](https://intercambio.upv.es/download.php?id=fb195897e663b329b614923f5c29acf3)
     * [Part 2](https://intercambio.upv.es/download.php?id=016b04d7fb480fe5c00943080c73b449)
 
-Proposed schedule for the first session (can be modified if required):
+#### Proposed schedule for the first session (can be modified if required):
 
   * Presentations:
 
