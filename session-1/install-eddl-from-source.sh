@@ -14,11 +14,13 @@ mkdir -p build && cd build
 cmake -G "Unix Makefiles" \
 	-DCMAKE_BUILD_TYPE=$BUILD_TYPE \
 	-DBUILD_TARGET=$DEVICE \
-	-DBUILD_SUPERBUILD=ON \
+	-DBUILD_SUPERBUILD=OFF \
 	-DCMAKE_PREFIX_PATH=${CONDA_PREFIX} \
 	-DCMAKE_INSTALL_PREFIX=${CONDA_PREFIX} \
 	-DBUILD_TESTS=ON \
 	..
+
+# BUILD_SUPERBUILD must be set to OFF in this case because we are working on conda, see previous script.
 
 make -j$PROC && make install
 
