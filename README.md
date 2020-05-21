@@ -60,7 +60,7 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
   * Presentations:
 
     1. UC12 & Pneumothorax in C++ (UNIMORE)
-      * Pneumothorax: demo for downloading the dataset, download the masks (ground truth), cloning the pipeline repository, compile and execute the setup program, which copies the masks into the right folders, compile and execute the training program.
+      * Pneumothorax: demo for downloading the dataset, download the masks (ground truth), cloning the pipeline repository, compile and execute the setup program, which copies the masks into the right folders, compile and execute the training program. [Slides](https://github.com/deephealthproject/workshops/raw/master/session-1/20200521%20Hackaton%20-%20Pneumothorax%20UNIMORE.pptx)
 
     2. Padchest in C++ (UPV)
 
