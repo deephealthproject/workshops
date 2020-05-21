@@ -9,7 +9,7 @@ if [ ! -d ecvl ]
 then
 	git clone https://github.com/deephealthproject/ecvl.git
 	cd ecvl
-	git checkout c5326665e93ab4f34d143bd94de527f4fe643053 # Latest master, waiting for the release
+	git checkout c3bcad0a722c319724dd660b58c93bf8b154e37c # Latest master, waiting for the release
 else
 	cd ecvl
 fi
