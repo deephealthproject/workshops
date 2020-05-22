@@ -1,0 +1,119 @@
+PyEDDL & PyECVL Installation bitácoras. PRHLT-UPV.
+
+PREVIOUS STEPS
+=================================
+
+Folders setup. Recommended to be placed on your /home/
+-----------------------------------------------------------
+$mkdir temp
+$mkdir installs
+$cd installs
+$mkdir install_eddl
+$mkdir install_ecvl
+$mkdir install_opencv
+$mkdir install_protobuf
+$cd ../temp/
+
+
+For the installation of PyEDDL and PyECVL the following libraries need to be installed: Protobuf, OpenCV.
+
+Protobuf
+---------------------------------
+$wget -q https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-all-3.11.4.tar.gz
+$tar xf protobuf-all-3.11.4.tar.gz
+$cd protobuf-3.11.4
+$./configure --prefix=${HOME}/installs/install_protobuf
+$make -j (NOTE:If fails, compile it with only one thread => $make)
+$make install
+$echo "export LD_LIBRARY_PATH=${HOME}/installs/install_protobuf/lib:$LD_LIBRARY_PATH" >> ~/.bashrc
+$cd ..
+
+OpenCV (4.1.1)
+---------------------------------
+$git clone https://github.com/opencv/opencv.git
+$cd opencv
+$git checkout tags/4.1.1
+$mkdir build
+$cd build
+$cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=${HOME}/installs/install_opencv ..
+$make -j$(n_proc)
+$make install
+$export LD_LIBRARY_PATH=${HOME}/installs/install_opencv/lib:$LD_LIBRARY_PATH (Needed every time we log in. Recommended to export it in ~/.bashrc)
+$cd ../..
+
+
+IMPORTANT NOTICE: Version >8 of C and C++ compilers are needed in future steps so, before starting the process, bear in mind you need gcc8 and g++8 installed in your computer and the corresponding paths properly configured.
+
+Install gcc8 and g++8 (root permissions needed)
+---------------------------------------------------
+$sudo apt-get install gcc8
+$sudo apt-get install g++8
+$export CC=/usr/bin/gcc-8 
+$export CXX=/usr/bin/g++-8
+
+
+
+INSTALL PyECVL & PyEDDL
+==================================
+
+$git clone --recurse-submodules https://github.com/deephealthproject/pyecvl.git
+
+Install EDDL
+-------------------
+$pushd pyecvl/third_party/pyeddl/third_party/eddl
+$mkdir build
+$pushd build
+$conda env create -f ../environment.yml
+$conda activate eddl
+$cmake -D BUILD_SHARED_LIB=ON -D BUILD_PROTOBUF=ON -D BUILD_TESTS=OFF -D CMAKE_INSTALL_PREFIX=${HOME}/installs/install_eddl -D CMAKE_PREFIX_PATH=${HOME}/installs/install_protobuf ..
+
+IMPORTANT NOTICE: Make sure when running cmake that Build Target is GPU. Otherwise EDDL will only compile for CPU and will raise errors if using CS_GPU. If you have GPU in your machine and the target is not GPU, please, make sure the following environment variables point to the proper routes:
+	- $LD_LIBRARY_PATH must point to cuda libraries
+	- $CUDA_HOME must point to cuda installation folder
+	- $PATH must include the route to ${CUDA_HOME}/bin
+
+$make -j$(n_proc)
+$make install
+$popd
+$popd
+
+Install ECVL
+--------------------
+$cd pyecvl
+$pushd third_party/ecvl
+$mkdir build
+$pushd build
+$cmake -DECVL_WITH_DICOM=ON -DECVL_WITH_OPENSLIDE=OFF -DECVL_DATASET=ON -DECVL_BUILD_EDDL=ON -DCMAKE_INSTALL_PREFIX=${HOME}/installs/install_ecvl -D OpenCV_DIR=${HOME}/temp/opencv/build -DECVL_DATASET_PARSER=ON -Deddl_DIR=${HOME}/temp/pyecvl/third_party/pyeddl/third_party/eddl/build/cmake ..
+$make -j$(n_proc)
+$make install
+$popd
+$popd
+
+
+Install Python Wrappers for both libraries
+---------------------------------------------
+
+PyEDDL
+......................
+$python -m pip install --upgrade setuptools pip numpy pybind11 pytest
+$export CPATH="${HOME}/.conda/envs/eddl/include/eigen3:${CPATH}"
+$export EDDL_DIR=${HOME}/installs/install_eddl
+$pushd third_party/pyeddl
+$python3 setup.py install
+$popd
+
+PyECVL
+......................
+$export ECVL_DIR=${HOME}/installs/install_ecvl
+$export CPATH="${HOME}/installs/install_opencv/include/opencv4/:${CPATH}"
+
+IMPORTANT NOTICE: setup.py is not ready for new versions of EDDL and ECVL so it has to be modified before running it.
+
+$vim setup.py
+
+>(Line 66 modified)
+> 66 LIBRARY_DIRS = [os.path.join(os.getenv("HOME"),"installs/install_opencv/lib")]
+
+
+$export ECVL_WITH_OPENSLIDE=OFF
+$python3 setup.py install
