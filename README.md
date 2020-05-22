@@ -60,13 +60,21 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
   * Presentations:
 
     1. UC12 & Pneumothorax in C++ (UNIMORE)
-      * Pneumothorax: demo for downloading the dataset, download the masks (ground truth), cloning the pipeline repository, compile and execute the setup program, which copies the masks into the right folders, compile and execute the training program. [Slides](https://github.com/deephealthproject/workshops/raw/master/session-1/20200521%20Hackaton%20-%20Pneumothorax%20UNIMORE.pptx)
+      * Pneumothorax: demo for downloading the dataset, download the masks (ground truth),
+        cloning the pipeline repository, compile and execute the setup program,
+        which copies the masks into the right folders, compile and execute the training program.
+        [Slides](https://github.com/deephealthproject/workshops/raw/master/session-1/20200521%20Hackaton%20-%20Pneumothorax%20UNIMORE.pptx)
 
     2. Padchest in C++ (UPV)
+       [Slides](session-1/c++_pipeline_presentation_final.pdf)
 
     3. UC12 & Pneumothorax in Python (UNIMORE)
 
     4. Padchest in Python (UPV)
+      * [Slides](session-1/python_pipeline_presentation_padchest.pdf) 
+      * [padchest_train.py](session-1/padchest_train.py)
+      * [padchest_inference.py](session-1/padchest_inference.py)
+      * [Installation bitacora](session-1/bitacora_installation_Python_pipeline.txt)
 
   * Configuration issues and programming:
 
