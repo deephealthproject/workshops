@@ -83,4 +83,8 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
   
 ## Second session (tentative date) 2020-06-04 (Thursday) from 8 AM to 11 AM
 
-  * T.B.A.
+  * Presentation of results
+
+  * Presentation and demo of the front-end 
+
+  * Configuration issues and programming
