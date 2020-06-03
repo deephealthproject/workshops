@@ -7,7 +7,7 @@ This project contains material to support the sessions carried out among the **_
 We plan to have several sessions in order to show other partners in the project how to install, configure and use the libraries developed in the **_DeepHealth_** project.
 Further support in addition to these sessions will be provided in order to reach all platform providers integrate the libraries into their application platforms.
 
-## First session 2020-05-21 (Thursday) from 8 AM to 11 AM
+## First session 2020-05-21 (Thursday) from 9 AM to 11:30 AM
 
 For this first session the following material is available in order to help **_DeepHealth_** partners and any other interested people in preparing the complete pipeline.
 What you can see here has been prepared starting from the [_use case pipeline_](https://github.com/deephealthproject/use_case_pipeline) prepared by UNIMORE team.
@@ -81,10 +81,10 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
     * Testing pipelines run on partners’ computers and giving the necessary support
   
   
-## Second session (tentative date) 2020-06-04 (Thursday) from 8 AM to 11 AM
+## Second session (tentative date) 2020-06-04 (Thursday) from 9 AM to 11:30 AM
 
   * Presentation of results
 
   * Presentation and demo of the front-end 
 
-  * Configuration issues and programming
+  * Configuration and programming issues
