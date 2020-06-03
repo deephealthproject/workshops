@@ -81,10 +81,17 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
     * Testing pipelines run on partners’ computers and giving the necessary support
   
   
-## Second session (tentative date) 2020-06-04 (Thursday) from 9 AM to 11:30 AM
+## Second session 2020-06-04 (Thursday) from 9 AM to 11:30 AM
 
   * Presentation of results
 
+  * Presentation and demo of the back-end 
+
   * Presentation and demo of the front-end 
 
-  * Configuration and programming issues
+  * Configuration and programming issues (if required by any partner)
+
+
+## Third session (tentative date) 2020-06-18 (Thursday) from 9 AM to 11:30 AM
+
+  * T.B.A. it will be HPC+Cloud oriented 
