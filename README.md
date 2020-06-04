@@ -75,6 +75,7 @@ But the purpose of this alternative is to have an installation of the EDDL in a 
       * [padchest_train.py](session-1/padchest_train.py)
       * [padchest_inference.py](session-1/padchest_inference.py)
       * [Installation bitacora](session-1/bitacora_installation_Python_pipeline.txt)
+      * [Whole Python pipeline](session-1/padchest_pypipeline.zip)
 
   * Configuration issues and programming:
 
